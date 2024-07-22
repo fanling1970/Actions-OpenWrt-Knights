@@ -32,7 +32,7 @@ env:
   UPLOAD_TAG_NAME: jdcloud-ax6600
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   # REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x
-  REPO_BRANCH: main
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: JDCloud-AX1800-Pro_AX6600/.config
   DIY_P1_SH: JDCloud-AX1800-Pro_AX6600/diy-part1.sh
