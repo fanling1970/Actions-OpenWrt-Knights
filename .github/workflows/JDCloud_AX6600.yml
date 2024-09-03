@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############手动修改##############
-name: JDCloud_AX6600-OpenWrt-6.6
+name: Knights-JDCloud_AX6600-OpenWrt-6.6
 
 on:
   repository_dispatch:
