@@ -17,7 +17,7 @@ on:
 env:
   ###############手动修改##############
   OPENWRT_NAME: openwrt
-  UPLOAD_TAG_NAME: jdcloud-ax6600
+  UPLOAD_TAG_NAME: Knights-jdcloud-ax6600
   REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
