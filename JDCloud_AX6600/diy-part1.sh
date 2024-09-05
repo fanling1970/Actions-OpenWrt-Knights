@@ -18,11 +18,11 @@ git clone https://github.com/kenzok8/openwrt-packages package/kenzo
 git clone https://github.com/kenzok8/small package/small
 #echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns' >>feeds.conf.default
 
-echo >> feeds.conf.default
-echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-echo >> feeds.conf.default
-echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
-echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+#echo >> feeds.conf.default
+#echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+#echo >> feeds.conf.default
+#echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+#echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
 
 # 科学上网插件
 #git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
