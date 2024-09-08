@@ -38,7 +38,7 @@ env:
   DIY_P1_SH: JDCloud-AX1800-Pro_AX6600/diy-part1.sh
   DIY_P2_SH: JDCloud-AX1800-Pro_AX6600/diy-part2.sh
   SSH_ACTIONS: false
-  UPLOAD_BIN_DIR: true
+  UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
@@ -159,7 +159,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/dl
+        path: openwrt/bln
       
     - name: 整理文件并重命名
       id: organize
