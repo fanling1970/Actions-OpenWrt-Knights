@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############手动修改##############
-name: LiBwrt-op-JDCloud_AX6600-OpenWrt-6.6
+name: TEST-LiBwrt-op-JDCloud_AX6600-OpenWrt-6.6
 
 on:
   repository_dispatch:
@@ -19,12 +19,12 @@ env:
   OPENWRT_NAME: openwrt
   UPLOAD_TAG_NAME: jdcloud-ax6600
   REPO_URL: https://github.com/LiBwrt-op/openwrt-6.x.git
-  REPO_BRANCH: main
+  REPO_BRANCH: test
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: JDCloud_AX6600/.config
   DIY_P1_SH: JDCloud_AX6600/diy-part1.sh
   DIY_P2_SH: JDCloud_AX6600/diy-part2.sh
-  UPLOAD_BIN_DIR: true
+  UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
@@ -130,7 +130,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/dl      
+        path: openwrt/bin      
       
     - name: 整理文件并重命名
       id: organize
